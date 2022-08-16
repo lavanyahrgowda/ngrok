@@ -1,0 +1,18 @@
+
+pipeline{
+    agent any
+    stages{
+        stage ("first stage"){
+            steps{
+            echo "hello from github"
+            }
+            
+        }
+         stage ("secod stage"){
+            steps{
+            echo "hello from  ngrok"
+            }
+            
+        }
+    }
+}

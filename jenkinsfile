@@ -10,7 +10,7 @@ pipeline{
         }
          stage ("secod stage"){
             steps{
-            echo "hello from  ngrok"
+            echo "Bye  ngrok"
             }
             
         }

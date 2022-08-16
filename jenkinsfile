@@ -12,6 +12,20 @@ pipeline{
             steps{
             echo "Bye  ngrok"
             }
+            post{
+               failure{
+                     mail bcc: '', body: 'from jenkins failuree', cc: 'divyagowda8393@gmail.com', from: '', replyTo: '', subject: 'hii', to: 'divyasow98@gmail.com'
+                
+                }
+                 success{
+                     mail bcc: '', body: 'from jenkins success', cc: 'divyagowda8393@gmail.com', from: '', replyTo: '', subject: 'hii', to: 'divyasow98@gmail.com'
+                
+                }
+                 always{
+                     mail bcc: '', body: 'from jenkins always', cc: 'divyagowda8393@gmail.com', from: '', replyTo: '', subject: 'hii', to: 'divyasow98@gmail.com'
+                
+                }
+            }
             
         }
     }
